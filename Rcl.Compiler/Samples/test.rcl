@@ -1,0 +1,77 @@
+namespace std.collections;
+
+public fn int main(){
+    LinkedList<int> numbers = new();
+    loop mut var i = 0; i < 10; i++ {
+        numbers.add(i);
+    }
+    mut var sum = 0;
+    loop var num in numbers {
+        sum += num;
+    }
+    return sum;
+} 
+
+public interface IEnumerable<TItem> {
+    IEnumerator<TItem> enumerator();
+} 
+
+public interface IEnumerator<TItem> {
+    TItem? next();
+}
+
+public interface IReadonlyCollection<TItem> extends IEnumerable<TItem>{
+    size size {get}
+}
+
+public interface ICollection<TItem> extends IReadonlyCollection<TItem> {
+    void add(TItem);
+    void remove(TItem);
+}    
+
+public interface IReadonlyList<TItem> extends IReadonlyCollection<TItem> {
+    TItem? getAt(size);
+}
+
+public interface IList<TItem> extends IReadonlyList<TItem>, ICollection<TItem> {
+    bool addAt(size, TItem);
+    TItem? removeAt(size);
+}
+
+public class ListEnumerator<TItem> implements IEnumerator<TItem> {
+    private size index;
+    private IReadonlyList<TItem> list {get}
+    
+    public new(IReadonlyList<TItem> list){
+        this.list = list;
+    }
+    
+    public TItem? next() => list.getAt(size++);
+}
+
+private class LinkedListItem { 
+    public LinkedListItem<TItem>? next;
+    public LinkedListItem<TItem>? previous;
+}
+    
+public class LinkedList<TItem> implements IList<TItem> {
+
+    public size size {get; private set}
+    private LinkedListItem<TItem> start {get} = new();
+    private LinkedListItem<TItem> end {get} = new();
+     
+    public new(){
+        start.next = end;
+        end.previous = start;
+    }
+        
+    public ListEnumerator<TItem> enumerator() => new(this);
+    
+    public void add(TItem item){}
+    public void remove(TItem item){}
+    
+    public TItem? getAt(size index) => new();
+    
+    public bool addAt(size index, TItem item) => false;
+    public TItem? removeAt(size index) => new();
+}
