@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from C:/Users/julia/RiderProjects/Rcl/Rcl.Compiler\RaccoonLang.g4 by ANTLR 4.9.2
+// Generated from C:/Users/jbaehr/Source/Rcl/Rcl.Compiler\RaccoonLang.g4 by ANTLR 4.9.2
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -591,25 +591,25 @@ public interface IRaccoonLangListener : IParseTreeListener {
 	/// <param name="context">The parse tree.</param>
 	void ExitMutChangeStatement([NotNull] RaccoonLangParser.MutChangeStatementContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="RaccoonLangParser.varialeDeclarationStatement"/>.
+	/// Enter a parse tree produced by <see cref="RaccoonLangParser.variableDeclarationStatement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVarialeDeclarationStatement([NotNull] RaccoonLangParser.VarialeDeclarationStatementContext context);
+	void EnterVariableDeclarationStatement([NotNull] RaccoonLangParser.VariableDeclarationStatementContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="RaccoonLangParser.varialeDeclarationStatement"/>.
+	/// Exit a parse tree produced by <see cref="RaccoonLangParser.variableDeclarationStatement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVarialeDeclarationStatement([NotNull] RaccoonLangParser.VarialeDeclarationStatementContext context);
+	void ExitVariableDeclarationStatement([NotNull] RaccoonLangParser.VariableDeclarationStatementContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="RaccoonLangParser.varialeDeclaration"/>.
+	/// Enter a parse tree produced by <see cref="RaccoonLangParser.variableDeclaration"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVarialeDeclaration([NotNull] RaccoonLangParser.VarialeDeclarationContext context);
+	void EnterVariableDeclaration([NotNull] RaccoonLangParser.VariableDeclarationContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="RaccoonLangParser.varialeDeclaration"/>.
+	/// Exit a parse tree produced by <see cref="RaccoonLangParser.variableDeclaration"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVarialeDeclaration([NotNull] RaccoonLangParser.VarialeDeclarationContext context);
+	void ExitVariableDeclaration([NotNull] RaccoonLangParser.VariableDeclarationContext context);
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="RaccoonLangParser.loopStatement"/>.
 	/// </summary>
@@ -831,15 +831,15 @@ public interface IRaccoonLangListener : IParseTreeListener {
 	/// <param name="context">The parse tree.</param>
 	void ExitTerm([NotNull] RaccoonLangParser.TermContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="RaccoonLangParser.methodCallExpression"/>.
+	/// Enter a parse tree produced by <see cref="RaccoonLangParser.functionCallExpression"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterMethodCallExpression([NotNull] RaccoonLangParser.MethodCallExpressionContext context);
+	void EnterFunctionCallExpression([NotNull] RaccoonLangParser.FunctionCallExpressionContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="RaccoonLangParser.methodCallExpression"/>.
+	/// Exit a parse tree produced by <see cref="RaccoonLangParser.functionCallExpression"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitMethodCallExpression([NotNull] RaccoonLangParser.MethodCallExpressionContext context);
+	void ExitFunctionCallExpression([NotNull] RaccoonLangParser.FunctionCallExpressionContext context);
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="RaccoonLangParser.postExpression"/>.
 	/// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from C:/Users/julia/RiderProjects/Rcl/Rcl.Compiler\RaccoonLang.g4 by ANTLR 4.9.2
+// Generated from C:/Users/jbaehr/Source/Rcl/Rcl.Compiler\RaccoonLang.g4 by ANTLR 4.9.2
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -708,29 +708,29 @@ public partial class RaccoonLangBaseListener : IRaccoonLangListener {
 	/// <param name="context">The parse tree.</param>
 	public virtual void ExitMutChangeStatement([NotNull] RaccoonLangParser.MutChangeStatementContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="RaccoonLangParser.varialeDeclarationStatement"/>.
+	/// Enter a parse tree produced by <see cref="RaccoonLangParser.variableDeclarationStatement"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVarialeDeclarationStatement([NotNull] RaccoonLangParser.VarialeDeclarationStatementContext context) { }
+	public virtual void EnterVariableDeclarationStatement([NotNull] RaccoonLangParser.VariableDeclarationStatementContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="RaccoonLangParser.varialeDeclarationStatement"/>.
+	/// Exit a parse tree produced by <see cref="RaccoonLangParser.variableDeclarationStatement"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVarialeDeclarationStatement([NotNull] RaccoonLangParser.VarialeDeclarationStatementContext context) { }
+	public virtual void ExitVariableDeclarationStatement([NotNull] RaccoonLangParser.VariableDeclarationStatementContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="RaccoonLangParser.varialeDeclaration"/>.
+	/// Enter a parse tree produced by <see cref="RaccoonLangParser.variableDeclaration"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVarialeDeclaration([NotNull] RaccoonLangParser.VarialeDeclarationContext context) { }
+	public virtual void EnterVariableDeclaration([NotNull] RaccoonLangParser.VariableDeclarationContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="RaccoonLangParser.varialeDeclaration"/>.
+	/// Exit a parse tree produced by <see cref="RaccoonLangParser.variableDeclaration"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVarialeDeclaration([NotNull] RaccoonLangParser.VarialeDeclarationContext context) { }
+	public virtual void ExitVariableDeclaration([NotNull] RaccoonLangParser.VariableDeclarationContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="RaccoonLangParser.loopStatement"/>.
 	/// <para>The default implementation does nothing.</para>
@@ -996,17 +996,17 @@ public partial class RaccoonLangBaseListener : IRaccoonLangListener {
 	/// <param name="context">The parse tree.</param>
 	public virtual void ExitTerm([NotNull] RaccoonLangParser.TermContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="RaccoonLangParser.methodCallExpression"/>.
+	/// Enter a parse tree produced by <see cref="RaccoonLangParser.functionCallExpression"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterMethodCallExpression([NotNull] RaccoonLangParser.MethodCallExpressionContext context) { }
+	public virtual void EnterFunctionCallExpression([NotNull] RaccoonLangParser.FunctionCallExpressionContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="RaccoonLangParser.methodCallExpression"/>.
+	/// Exit a parse tree produced by <see cref="RaccoonLangParser.functionCallExpression"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitMethodCallExpression([NotNull] RaccoonLangParser.MethodCallExpressionContext context) { }
+	public virtual void ExitFunctionCallExpression([NotNull] RaccoonLangParser.FunctionCallExpressionContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="RaccoonLangParser.postExpression"/>.
 	/// <para>The default implementation does nothing.</para>

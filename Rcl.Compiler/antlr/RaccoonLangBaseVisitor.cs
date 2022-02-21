@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from C:/Users/julia/RiderProjects/Rcl/Rcl.Compiler\RaccoonLang.g4 by ANTLR 4.9.2
+// Generated from C:/Users/jbaehr/Source/Rcl/Rcl.Compiler\RaccoonLang.g4 by ANTLR 4.9.2
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -595,7 +595,7 @@ public partial class RaccoonLangBaseVisitor<Result> : AbstractParseTreeVisitor<R
 	/// <return>The visitor result.</return>
 	public virtual Result VisitMutChangeStatement([NotNull] RaccoonLangParser.MutChangeStatementContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="RaccoonLangParser.varialeDeclarationStatement"/>.
+	/// Visit a parse tree produced by <see cref="RaccoonLangParser.variableDeclarationStatement"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -603,9 +603,9 @@ public partial class RaccoonLangBaseVisitor<Result> : AbstractParseTreeVisitor<R
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVarialeDeclarationStatement([NotNull] RaccoonLangParser.VarialeDeclarationStatementContext context) { return VisitChildren(context); }
+	public virtual Result VisitVariableDeclarationStatement([NotNull] RaccoonLangParser.VariableDeclarationStatementContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="RaccoonLangParser.varialeDeclaration"/>.
+	/// Visit a parse tree produced by <see cref="RaccoonLangParser.variableDeclaration"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -613,7 +613,7 @@ public partial class RaccoonLangBaseVisitor<Result> : AbstractParseTreeVisitor<R
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitVarialeDeclaration([NotNull] RaccoonLangParser.VarialeDeclarationContext context) { return VisitChildren(context); }
+	public virtual Result VisitVariableDeclaration([NotNull] RaccoonLangParser.VariableDeclarationContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="RaccoonLangParser.loopStatement"/>.
 	/// <para>
@@ -835,7 +835,7 @@ public partial class RaccoonLangBaseVisitor<Result> : AbstractParseTreeVisitor<R
 	/// <return>The visitor result.</return>
 	public virtual Result VisitTerm([NotNull] RaccoonLangParser.TermContext context) { return VisitChildren(context); }
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="RaccoonLangParser.methodCallExpression"/>.
+	/// Visit a parse tree produced by <see cref="RaccoonLangParser.functionCallExpression"/>.
 	/// <para>
 	/// The default implementation returns the result of calling <see cref="AbstractParseTreeVisitor{Result}.VisitChildren(IRuleNode)"/>
 	/// on <paramref name="context"/>.
@@ -843,7 +843,7 @@ public partial class RaccoonLangBaseVisitor<Result> : AbstractParseTreeVisitor<R
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	public virtual Result VisitMethodCallExpression([NotNull] RaccoonLangParser.MethodCallExpressionContext context) { return VisitChildren(context); }
+	public virtual Result VisitFunctionCallExpression([NotNull] RaccoonLangParser.FunctionCallExpressionContext context) { return VisitChildren(context); }
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="RaccoonLangParser.postExpression"/>.
 	/// <para>

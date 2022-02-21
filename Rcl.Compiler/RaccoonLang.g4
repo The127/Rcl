@@ -243,7 +243,7 @@ genericPart
 statement
     : loopStatement
     | expressionStatement
-    | varialeDeclarationStatement
+    | variableDeclarationStatement
     | mutChangeStatement
     | returnStatement
     ;
@@ -256,12 +256,12 @@ mutChangeStatement
     : identifierListDot (op='=' | op='+=' | op='-=' | op='*=' | op='/=' | op='^=' | op='|=' | op='||=' | op='&=' | op='&&=' | op='??=' | op='%=') expression ';'
     ;
     
-varialeDeclarationStatement
-    : varialeDeclaration ';'
+variableDeclarationStatement
+    : mut='mut'? variableDeclaration ';'
     ;
     
-varialeDeclaration
-    : mut='mut'? ('var' | fqtn) Identifier '=' expression
+variableDeclaration
+    : ('var' | fqtn) Identifier '=' expression
     ;
     
 loopStatement
@@ -281,7 +281,7 @@ foreachLoop
     ;
     
 forLoop
-    : varialeDeclaration? ';' cond=expression? ';' inc=expression?
+    : 'mut' variableDeclaration? ';' cond=expression? ';' inc=postExpression?
     ;
     
 expressionStatement
@@ -360,14 +360,13 @@ term
     | newExpression
     | literal
     | parExpression
-    | methodCallExpression
+    | functionCallExpression
     ;
     
-methodCallExpression
+functionCallExpression
     : fqtn'(' expressionList? ')'?
     ;
 
-    
 postExpression
     : (name=Identifier | 'this' | 'base') (op='++' | op='--')?
     ;

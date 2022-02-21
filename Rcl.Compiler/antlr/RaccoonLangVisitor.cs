@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from C:/Users/julia/RiderProjects/Rcl/Rcl.Compiler\RaccoonLang.g4 by ANTLR 4.9.2
+// Generated from C:/Users/jbaehr/Source/Rcl/Rcl.Compiler\RaccoonLang.g4 by ANTLR 4.9.2
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -368,17 +368,17 @@ public interface IRaccoonLangVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <return>The visitor result.</return>
 	Result VisitMutChangeStatement([NotNull] RaccoonLangParser.MutChangeStatementContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="RaccoonLangParser.varialeDeclarationStatement"/>.
+	/// Visit a parse tree produced by <see cref="RaccoonLangParser.variableDeclarationStatement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVarialeDeclarationStatement([NotNull] RaccoonLangParser.VarialeDeclarationStatementContext context);
+	Result VisitVariableDeclarationStatement([NotNull] RaccoonLangParser.VariableDeclarationStatementContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="RaccoonLangParser.varialeDeclaration"/>.
+	/// Visit a parse tree produced by <see cref="RaccoonLangParser.variableDeclaration"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVarialeDeclaration([NotNull] RaccoonLangParser.VarialeDeclarationContext context);
+	Result VisitVariableDeclaration([NotNull] RaccoonLangParser.VariableDeclarationContext context);
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="RaccoonLangParser.loopStatement"/>.
 	/// </summary>
@@ -512,11 +512,11 @@ public interface IRaccoonLangVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <return>The visitor result.</return>
 	Result VisitTerm([NotNull] RaccoonLangParser.TermContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="RaccoonLangParser.methodCallExpression"/>.
+	/// Visit a parse tree produced by <see cref="RaccoonLangParser.functionCallExpression"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitMethodCallExpression([NotNull] RaccoonLangParser.MethodCallExpressionContext context);
+	Result VisitFunctionCallExpression([NotNull] RaccoonLangParser.FunctionCallExpressionContext context);
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="RaccoonLangParser.postExpression"/>.
 	/// </summary>
