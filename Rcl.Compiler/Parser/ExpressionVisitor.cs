@@ -4,6 +4,16 @@ namespace Rcl.Compiler.Parser;
 
 public class ExpressionVisitor : ParserVisitorBase<ExpressionModel>
 {
+    public override ExpressionModel VisitFunctionBlockBody(RaccoonLangParser.FunctionBlockBodyContext context)
+    {
+        return new TermExpressionModel(new TermVisitor().VisitBlockExpression(context.blockExpression()));
+    }
+
+    public override ExpressionModel VisitFunctionLambdaBody(RaccoonLangParser.FunctionLambdaBodyContext context)
+    {
+        return Visit(context.expression());
+    }
+
     public override ExpressionModel VisitTerm(RaccoonLangParser.TermContext context) =>
         new TermExpressionModel(new TermVisitor().Visit(context));
 

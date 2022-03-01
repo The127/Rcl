@@ -1,6 +1,11 @@
 namespace std.collections;
 
 public fn int main(){
+    return 0;
+}  
+
+/*
+public fn int main(){
     LinkedList<int> numbers = new();
     loop mut var i = 0; i < 10; i++ {
         numbers.add(i);
@@ -75,3 +80,4 @@ public class LinkedList<TItem> implements IList<TItem> {
     public bool addAt(size index, TItem item) => false;
     public TItem? removeAt(size index) => new();
 }
+*/
